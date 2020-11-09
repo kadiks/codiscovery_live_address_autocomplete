@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>Address autocomplete</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/leaflet/1/leaflet.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <form method="POST">
+      <div id="map-example-container"></div>
+      <input type="search" id="address-input" placeholder="Où habitez-vous ?" />
+      <input name="postcode" type="hidden" placeholder="Code postal" />
+      <input name="street" type="hidden" placeholder="Rue" />
+      <input name="city" type="hidden" placeholder="Ville" />
+      <input name="country" type="hidden" placeholder="Pays" />
+      <input name="area" type="hidden" placeholder="Région" />
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/leaflet/1/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/places.js@1.19.0"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
